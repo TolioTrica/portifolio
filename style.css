@@ -1296,3 +1296,36 @@ img, video, iframe, .project-media {
         font-size: 1rem;
     }
 }
+/* Menu de Navegação */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white); /* Já está branco pela variável --white */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+/* Para o menu mobile quando aberto */
+.nav-links {
+    background: var(--white); /* Alterado para branco */
+}
+
+/* No media query para mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        background: var(--white); /* Garante que o menu mobile também fique branco */
+    }
+    
+    .nav-link {
+        color: var(--text-color); /* Garante que os links sejam visíveis no fundo branco */
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--primary-color);
+    }
+}
+
