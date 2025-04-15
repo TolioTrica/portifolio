@@ -1019,3 +1019,94 @@ footer {
         transform: translateY(-10px);
     }
 }
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    /* Ajustes gerais */
+    body {
+        font-size: 14px;
+    }
+
+    /* Menu de navegação */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #2a2a2a;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-link {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Seção Home */
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .typing-text {
+        font-size: 1.2rem;
+    }
+
+    /* Seção Sobre */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .profile-image-container {
+        margin-bottom: 2rem;
+    }
+
+    /* Seção Projetos */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Seção Habilidades */
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Seção Contato */
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-form-container, 
+    .contact-info {
+        width: 100%;
+    }
+
+    /* Rodapé */
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes para telas muito pequenas */
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+}
