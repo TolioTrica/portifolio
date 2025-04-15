@@ -1106,6 +1106,26 @@ footer {
         padding: 0.5rem 1rem;
     }
 
+/* Garantir que vídeos não ultrapassem a largura do container */
+.project-media video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Imagem de perfil */
+.profile-image {
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+    
+
     .section-header h2 {
         font-size: 1.5rem;
     }
