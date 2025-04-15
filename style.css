@@ -1223,8 +1223,76 @@ img, video, iframe, .project-media {
     }
 }
 
+/* Container principal do contato */
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Coluna em mobile */
+    gap: 2rem;
+}
 
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .contact-info {
+        width: 100%;
+        order: 2; /* Garante que apareça após o formulário */
+        margin-top: 2rem;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .social-links {
+        margin-top: 2rem;
+        text-align: center; /* Centraliza os ícones */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+}
     .section-header h2 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .social-icons {
+        gap: 0.8rem;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
     }
 }
