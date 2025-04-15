@@ -1302,18 +1302,41 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--white); /* Já está branco pela variável --white */
+    background: var(--secondary-color); /* Alterado para cor mais escura */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: var(--transition);
 }
 
-/* Para o menu mobile quando aberto */
-.nav-links {
-    background: var(--white); /* Alterado para branco */
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white); /* Alterado para branco */
 }
 
-/* No media query para mobile */
+.nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-weight: 500;
+    position: relative;
+    transition: var(--transition);
+    color: var(--white); /* Adicionado cor branca para os links */
+}
+
+/* Menu mobile quando aberto */
+@media (max-width: 768px) {
+    .nav-links {
+        background: var(--secondary-color); /* Fundo escuro para mobile */
+    }
+    
+    .nav-link {
+        color: var(--white); /* Garante cor branca no mobile */
+    }
+    
+    .hamburger .bar {
+        background: var(--white); /* Ícones do hamburger brancos */
+    }
+}
 @media (max-width: 768px) {
     .nav-links {
         background: var(--white); /* Garante que o menu mobile também fique branco */
