@@ -28,4 +28,19 @@ video.addEventListener("ended", function () {
         video.play(); // Reproduz novamente até atingir 4 repetições
     }
 });
+// Menu Hamburguer
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
 
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+// Fechar menu ao clicar em um link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
