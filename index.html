@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Tólio Trica - Desenvolvedor Full-Stack</title>
+    <meta name="description" content="Portfólio profissional de Tólio Trica, desenvolvedor Full-Stack especializado em JavaScript, PHP, C# e Java">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Botão Voltar ao Topo -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Menu de Navegação -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Tólio<span>Trica</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Olá, eu sou <span class="highlight">Tólio Trica</span></h1>
+            <p class="typing-text">Desenvolvedor Full-Stack | JavaScript | PHP | C# | Java</p>
+            <div class="home-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Contato</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="about section">
+        <div class="section-header">
+            <h2>Sobre Mim</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="profile-image-container">
+                <img src="imagens/portif.jpg" alt="Foto de Perfil" class="profile-image">
+                <div class="image-border-animation"></div>
+            </div>
+            <div class="about-text-container">
+                <p class="about-text">
+                    Sou um desenvolvedor apaixonado por criar soluções tecnológicas, formado pelo Instituto de Transportes e Comunicações. Tenho experiência de 6 meses com suporte informático e desenvolvimento Web, incluindo minha passagem como estagiário no Instituto Nacional de Estatística, onde atuei no suporte informático e no desenvolvimento web.
+                </p>
+                <p class="about-text">
+                    Adoro aprender novas tecnologias e resolver problemas complexos. Já desenvolvi projetos como aplicação de Emissão de Quitação, remodelação de sites (como pode ver abaixo) e outros projetos curriculares que demonstram minha capacidade de criar soluções eficientes e inovadoras.
+                </p>
+                <div class="about-cta">
+                    <a href="docs/ttrica.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i> Baixar CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects section">
+        <div class="section-header">
+            <h2>Meus Projetos</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Projeto 1 -->
+            <div class="project-card">
+                <div class="project-media">
+                    <video id="videoProjeto1" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/portVid.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="project-overlay">
+                        <h3>Emissão de Quitação</h3>
+                        <div class="tech-tags">
+                            <span>C#</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p>Aplicação completa para gerenciamento e emissão de quitações com integração a banco de dados.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/TolioTrica/Equitacao/" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="#" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projeto 2 -->
+            <div class="project-card">
+                <div class="project-media">
+                    <video id="videoProjeto2" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/lam.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="project-overlay">
+                        <h3>Remodelação de Site</h3>
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p>Redesign de website institucional com foco em usabilidade e design responsivo.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/TolioTrica/newlam" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="https://toliotrica.github.io/newlam" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Projeto 3 (adicione mais conforme necessário) -->
+            <div class="project-card">
+                <div class="project-media">
+                    <div class="project-placeholder">
+                        <i class="fas fa-code"></i>
+                        <p>Novo projeto em breve!</p>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <p>Estou a trabalhar em um novo projeto que será lançado em breve. Fique atento!</p>
+                    <div class="project-links">
+                        <a href="#contact" class="project-link">
+                            <i class="fas fa-envelope"></i> Saiba mais
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skills" class="skills section">
+        <div class="section-header">
+            <h2>Habilidades</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3><i class="fas fa-code"></i> Front-end</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>HTML5</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>CSS3</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>JavaScript</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-server"></i> Back-end</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>PHP</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>C#</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>Java</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3><i class="fas fa-database"></i> Bancos de Dados & Outros</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>MySQL</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>Git</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="skill-info">
+                            <p>ASP.NET</p>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact section">
+        <div class="section-header">
+            <h2>Entre em Contato</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Mande uma mensagem ou me encontre nas redes sociais</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/mgvanrwk" method="POST" class="contact-form" id="contactForm">
+                    <input type="hidden" name="_subject" value="Mensagem do Portfólio de Tólio Trica">
+                    <input type="hidden" name="_language" value="pt">
+                    
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="_replyto" placeholder="seu@email.com" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Como posso te ajudar?" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Maputo, Moçambique</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>toliotrica@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+258 84 968 2372</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/tólio-trica" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/TolioTrica" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/849682372" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://twitter.com/toliotrica" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">Tólio<span>Trica</span></a>
+                    <p>Desenvolvedor Full-Stack criando soluções digitais inovadoras.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Receba Atualizações</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tólio Trica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
