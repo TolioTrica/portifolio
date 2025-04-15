@@ -1124,7 +1124,62 @@ footer {
         height: 150px;
     }
 }
-    
+    /* Elimina a rolagem horizontal global */
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Bloqueia rolagem lateral */
+}
+
+/* Garante que todos os containers respeitem a largura da tela */
+.container, section, nav, footer {
+    max-width: 100vw; /* Largura máxima = largura da tela */
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box; /* Padding não soma à largura total */
+}
+
+/* Corrige elementos problemáticos comuns */
+img, video, iframe, .project-media {
+    max-width: 100%;
+    height: auto;
+}
+/* Container dos ícones */
+.social-icons {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 10px; /* Espaçamento entre ícones */
+    justify-content: center; /* Centraliza em mobile */
+}
+
+/* Ícones individuais */
+.social-icon {
+    font-size: 1.2rem; /* Tamanho adequado para mobile */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/* Media Query para mobile */
+@media (max-width: 480px) {
+    .social-links {
+        text-align: center; /* Centraliza título e ícones */
+    }
+
+    .social-icons {
+        gap: 8px; /* Reduz espaçamento */
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+    }
+}
 
     .section-header h2 {
         font-size: 1.5rem;
