@@ -1180,6 +1180,49 @@ img, video, iframe, .project-media {
         font-size: 1rem;
     }
 }
+.social-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-icon i {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon i:hover {
+    background-color: #0077b5; /* cor destaque, ex: LinkedIn */
+    transform: scale(1.1);
+}
+
+/* Responsivo para celular */
+@media (max-width: 600px) {
+    .social-icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social-links {
+        display: block;
+    }
+}
+
 
     .section-header h2 {
         font-size: 1.5rem;
