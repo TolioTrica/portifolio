@@ -100,6 +100,10 @@
                             <span>JavaScript</span>
                             <span>MySQL</span>
                             <span>Bootstrap</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JQuery</span>
+                            <span>Ajax</span>
                         </div>
                     </div>
                 </div>
@@ -148,21 +152,37 @@
             <!-- Projeto 3 (adicione mais conforme necessário) -->
             <div class="project-card">
                 <div class="project-media">
-                    <div class="project-placeholder">
-                        <i class="fas fa-code"></i>
-                        <p>Novo projeto em breve!</p>
+                    <video id="videoProjeto3" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/Macaki.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <div class="project-overlay">
+                        <h3>MarcAki</h3>
+                        <div class="tech-tags">
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>JQuery</span>
+                            <span>Ajax</span>
+
+                        </div>
                     </div>
                 </div>
                 <div class="project-info">
-                    <p>Estou a trabalhar em um novo projeto que será lançado em breve. Fique atento!</p>
+                    <p>Website de marcação para barbearias com design intuitivo e responsivo.</p>
                     <div class="project-links">
-                        <a href="#contact" class="project-link">
-                            <i class="fas fa-envelope"></i> Saiba mais
+                        <a href="https://github.com/TolioTrica/" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
+                        <a href="https://toliotrica.github.io/newlam" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Seção Habilidades -->
@@ -374,6 +394,49 @@
             </div>
         </div>
     </section>
+
+    <!-- Adicione esta seção antes do footer -->
+<section id="admin-dashboard" class="admin-section" style="display: none;">
+    <div class="section-header">
+        <h2>Painel Administrativo</h2>
+        <div class="section-divider"></div>
+    </div>
+    
+    <div class="admin-container">
+        <div class="admin-stats">
+            <div class="stat-card">
+                <h3>Total de Visitantes</h3>
+                <p id="total-visitors">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Visitantes Hoje</h3>
+                <p id="today-visitors">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Visitantes Únicos</h3>
+                <p id="unique-visitors">0</p>
+            </div>
+        </div>
+        
+        <div class="visitors-table">
+            <h3>Últimos Visitantes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data/Hora</th>
+                        <th>IP</th>
+                        <th>Localização</th>
+                        <th>Páginas Visitadas</th>
+                        <th>Dispositivo</th>
+                    </tr>
+                </thead>
+                <tbody id="visitors-list">
+                    <!-- Os dados serão preenchidos via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
 
     <!-- Rodapé -->
     <footer>
