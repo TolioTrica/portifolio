@@ -3,442 +3,629 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Portfólio | Tólio Trica - Desenvolvedor Full-Stack</title>
-
-    <meta name="description" content="Portfólio profissional de Tólio Trica, Desenvolvedor Full-Stack especializado em JavaScript, PHP, C#, Java, ASP.NET e bancos de dados.">
-
-    <meta name="theme-color" content="#0a0f1c">
-
-    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Google Fonts -->
+    <meta name="description" content="Portfólio profissional de Tólio Trica, desenvolvedor Full-Stack especializado em JavaScript, PHP, C# e Java">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Menu de Navegação -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Tólio<span>Trica</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Olá, eu sou <span class="highlight">Tólio Trica</span></h1>
+
+            <p class="typing-text">
+                Desenvolvedor Full-Stack | JavaScript | PHP | C# | Java | Power BI
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Contato</a>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about" class="about section">
+        <div class="section-header">
+            <h2>Sobre Mim</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="about-content">
+
+            <div class="profile-image-container">
+                <img src="imagens/portif.jpg" alt="Foto de Perfil" class="profile-image">
+                <div class="image-border-animation"></div>
+            </div>
+
+            <div class="about-text-container">
+
+                <p class="about-text">
+                    Sou um desenvolvedor apaixonado por criar soluções tecnológicas, formado pelo Instituto de Transportes e Comunicações. Tenho experiência com suporte informático e desenvolvimento Web, incluindo minha passagem como estagiário no Instituto Nacional de Estatística, onde atuei no suporte informático e no desenvolvimento web.
+                </p>
+
+                <p class="about-text">
+                    Adoro aprender novas tecnologias e resolver problemas complexos. Já desenvolvi projetos como aplicação de Emissão de Quitação, remodelação de sites, o Marcaki que é um website de marcação (como pode ver abaixo) e outros projetos curriculares que demonstram minha capacidade de criar soluções eficientes e inovadoras.
+                </p>
+
+                <div class="about-cta">
+                    <a href="docs/ttrica.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i> Baixar CV
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects section">
+
+        <div class="section-header">
+            <h2>Meus Projetos</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Projeto 1 -->
+            <div class="project-card">
+
+                <div class="project-media">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <style>
-
-        /* =========================================================
-           RESET
-        ========================================================= */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 80px;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #070b14;
-            color: #f4f7fb;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        button,
-        input,
-        textarea {
-            font-family: inherit;
-        }
-
-        img,
-        video {
-            max-width: 100%;
-        }
-
-        ::selection {
-            background: #00d9ff;
-            color: #061018;
-        }
-
-
-        /* =========================================================
-           VARIÁVEIS
-        ========================================================= */
-
-        :root {
-            --bg: #070b14;
-            --bg-soft: #0d1320;
-            --card: rgba(18, 27, 43, 0.72);
-            --card-solid: #101827;
-
-            --primary: #00d9ff;
-            --primary-dark: #00a8c7;
-
-            --secondary: #7c5cff;
-
-            --text: #f5f7fa;
-            --text-soft: #aab4c3;
-
-            --border: rgba(255,255,255,0.09);
-
-            --shadow:
-                0 20px 60px rgba(0,0,0,0.35);
-
-            --radius: 22px;
-        }
-
-
-        /* =========================================================
-           BACKGROUND
-        ========================================================= */
-
-        body::before {
-            content: "";
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            top: -200px;
-            left: -200px;
-            background: rgba(0,217,255,0.10);
-            filter: blur(120px);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        body::after {
-            content: "";
-            position: fixed;
-            width: 500px;
-            height: 500px;
-            right: -250px;
-            bottom: -200px;
-            background: rgba(124,92,255,0.12);
-            filter: blur(120px);
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
+                    <video id="videoProjeto1" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/portVid.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
 
-        /* =========================================================
-           NAVBAR
-        ========================================================= */
-
-        #navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
+                    <div class="project-overlay">
 
-            background: rgba(7,11,20,0.78);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
+                        <h3>Emissão de Quitação</h3>
 
-            border-bottom: 1px solid transparent;
+                        <div class="tech-tags">
+                            <span>C#</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JQuery</span>
+                            <span>Ajax</span>
+                        </div>
 
-            transition: 0.3s ease;
-        }
+                    </div>
+                </div>
 
-        #navbar.scrolled {
-            border-bottom: 1px solid var(--border);
-            background: rgba(7,11,20,0.92);
-        }
+                <div class="project-info">
 
-        .nav-container {
-            width: min(1180px, 92%);
-            margin: auto;
+                    <p>
+                        Aplicação completa para gerenciamento e emissão de quitações com integração a banco de dados.
+                    </p>
 
-            height: 75px;
+                    <div class="project-links">
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+                        <a href="https://github.com/TolioTrica/Equitacao/"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
 
-        .logo {
-            font-size: 1.45rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-        }
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
 
-        .logo span {
-            color: var(--primary);
-        }
+                    </div>
+                </div>
+            </div>
 
-        .nav-links {
-            list-style: none;
 
-            display: flex;
-            align-items: center;
-            gap: 28px;
-        }
+            <!-- Projeto 2 -->
+            <div class="project-card">
 
-        .nav-link {
-            color: var(--text-soft);
-            font-size: 0.9rem;
-            font-weight: 500;
-
-            position: relative;
-
-            transition: 0.3s ease;
-        }
+                <div class="project-media">
 
-        .nav-link::after {
-            content: "";
+                    <video id="videoProjeto2" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/lam.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
 
-            position: absolute;
-            left: 0;
-            bottom: -7px;
-
-            width: 0;
-            height: 2px;
+                    <div class="project-overlay">
 
-            background: var(--primary);
+                        <h3>Remodelação de Site</h3>
 
-            transition: 0.3s ease;
-        }
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
 
-        .nav-link:hover,
-        .nav-link.active {
-            color: white;
-        }
+                    </div>
+                </div>
 
-        .nav-link:hover::after,
-        .nav-link.active::after {
-            width: 100%;
-        }
+                <div class="project-info">
 
+                    <p>
+                        Redesign de website institucional com foco em usabilidade e design responsivo.
+                    </p>
 
-        /* =========================================================
-           HAMBURGER
-        ========================================================= */
+                    <div class="project-links">
 
-        .hamburger {
-            display: none;
-            width: 40px;
-            height: 40px;
+                        <a href="https://github.com/TolioTrica/newlam"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
 
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 5px;
+                        <a href="https://toliotrica.github.io/newlam"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
 
-            cursor: pointer;
+                    </div>
+                </div>
+            </div>
 
-            border-radius: 10px;
-        }
 
-        .hamburger .bar {
-            width: 23px;
-            height: 2px;
-            background: white;
+            <!-- Projeto 3 -->
+            <div class="project-card">
 
-            transition: 0.3s ease;
-        }
+                <div class="project-media">
 
-        .hamburger.active .bar:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
-        }
+                    <video id="videoProjeto3" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/Macaki.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
 
-        .hamburger.active .bar:nth-child(2) {
-            opacity: 0;
-        }
+                    <div class="project-overlay">
 
-        .hamburger.active .bar:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
-        }
+                        <h3>MarcAki</h3>
 
+                        <div class="tech-tags">
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                            <span>JQuery</span>
+                            <span>Ajax</span>
+                        </div>
 
-        /* =========================================================
-           GENERAL
-        ========================================================= */
+                    </div>
+                </div>
 
-        .section {
-            width: min(1180px, 92%);
-            margin: auto;
-            padding: 110px 0;
-        }
+                <div class="project-info">
 
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
+                    <p>
+                        Website de marcação para barbearias com design intuitivo e responsivo.
+                    </p>
 
-        .section-header h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
+                    <div class="project-links">
 
-        .section-divider {
-            width: 60px;
-            height: 4px;
+                        <a href="https://github.com/TolioTrica/"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
 
-            background: linear-gradient(
-                90deg,
-                var(--primary),
-                var(--secondary)
-            );
+                        <a href="https://toliotrica.github.io/portifolio"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
 
-            border-radius: 10px;
+                    </div>
+                </div>
+            </div>
 
-            margin: 15px auto;
-        }
 
-        .section-subtitle {
-            color: var(--text-soft);
-            max-width: 650px;
-            margin: 15px auto 0;
-        }
+            <!-- Projeto 4 - SmartPark -->
+            <div class="project-card">
 
+                <div class="project-media">
 
-        /* =========================================================
-           HOME
-        ========================================================= */
+                    <video id="videoProjeto4" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/smartVid.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
 
-        .home {
-            min-height: 100vh;
+                    <div class="project-overlay">
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+                        <h3>SmartPark</h3>
 
-            text-align: center;
+                        <div class="tech-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Tailwind CSS</span>
+                            <span>Alpine.js</span>
+                            <span>PWA</span>
+                        </div>
 
-            padding: 120px 20px 80px;
+                    </div>
+                </div>
 
-            position: relative;
-        }
+                <div class="project-info">
 
-        .home::before {
-            content: "";
+                    <p>
+                        PWA de gestão de estacionamento com reservas, controlo de vagas, pagamentos e gestão automática de multas.
+                    </p>
 
-            position: absolute;
+                    <div class="project-links">
 
-            width: 650px;
-            height: 650px;
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
 
-            border-radius: 50%;
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
 
-            background:
-                radial-gradient(
-                    circle,
-                    rgba(0,217,255,0.12),
-                    transparent 65%
-                );
+                    </div>
+                </div>
+            </div>
 
-            pointer-events: none;
-        }
 
-        .home-content {
-            position: relative;
-            z-index: 2;
+            <!-- Projeto 5 - House -->
+            <div class="project-card">
 
-            max-width: 900px;
-        }
+                <div class="project-media">
 
-        .home-content h1 {
-            font-size: clamp(2.3rem, 7vw, 5rem);
-            line-height: 1.1;
+                    <video id="videoProjeto5" width="100%" height="100%" autoplay muted loop>
+                        <source src="videos/houseVid.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
 
-            font-weight: 800;
+                    <div class="project-overlay">
 
-            letter-spacing: -2px;
+                        <h3>Website de Construção</h3>
 
-            margin-bottom: 22px;
-        }
+                        <div class="tech-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
 
-        .highlight {
-            background:
-                linear-gradient(
-                    90deg,
-                    var(--primary),
-                    #6ceeff,
-                    var(--secondary)
-                );
+                    </div>
+                </div>
 
-            -webkit-background-clip: text;
-            background-clip: text;
+                <div class="project-info">
 
-            color: transparent;
-        }
+                    <p>
+                        Website institucional desenvolvido para uma empresa de construção, apresentando os seus serviços e projetos com uma interface moderna e responsiva.
+                    </p>
 
-        .typing-text {
-            color: var(--text-soft);
+                    <div class="project-links">
 
-            font-size: clamp(0.95rem, 2vw, 1.15rem);
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fab fa-github"></i> Código
+                        </a>
 
-            margin-bottom: 35px;
-        }
+                        <a href="#"
+                           target="_blank"
+                           class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
 
-        .home-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+                    </div>
+                </div>
+            </div>
 
-        .btn {
-            display: inline-flex;
+        </div>
+    </section>
 
-            align-items: center;
-            justify-content: center;
 
-            gap: 9px;
+    <!-- Seção Habilidades -->
+    <section id="skills" class="skills section">
 
-            min-height: 48px;
+        <div class="section-header">
+            <h2>Habilidades</h2>
+            <div class="section-divider"></div>
+        </div>
 
-            padding: 12px 24px;
+        <div class="skills-container">
 
-            border-radius: 12px;
+            <div class="skills-category">
 
-            font-weight: 600;
+                <h3>
+                    <i class="fas fa-code"></i> Front-end
+                </h3>
 
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease,
-                background 0.3s ease;
-        }
+                <div class="skills-grid">
 
-        .btn:hover {
-            transform: translateY(-3px);
-        }
+                    <div class="skill-item">
 
-        .btn-primary {
-            color: #041016;
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
 
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--primary),
-                    #00a8ff
-                );
+                        <div class="skill-info">
 
-            box-shadow:
-                0 10px 30px rgba(0,217,255,0.18);
-        }
+                            <p>HTML5</p>
 
-        .btn-secondary,
-        .btn-outline {
-            color: white;
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
 
-            border: 1px solid var(--border);
+                        </div>
+                    </div>
 
-            background: rgba(255,255,255,0.04);
-        }
 
-        .btn-secondary:hover,
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>CSS3</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>JavaScript</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="skills-category">
+
+                <h3>
+                    <i class="fas fa-server"></i> Back-end
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>PHP</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>C#</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>Java</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="skills-category">
+
+                <h3>
+                    <i class="fas fa-database"></i> Bancos de Dados & Outros
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>MySQL</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>Git</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="skill-item">
+
+                        <div class="skill-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+
+                        <div class="skill-info">
+
+                            <p>ASP.NET</p>
+
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact section">
+
+        <div class="section-header">
+
+            <h2>Entre em Contato</h2>
+
+            <div class="section-divider"></div>
+
+            <p class="section-subtitle">
+                Mande uma mensagem ou me encontre nas redes sociais
+            </p>
+
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-form-container">
+
+                <form action="https://formspree.io/f/mgvanrwk"
+                      method="POST"
+                      class="contact-form"
+                      id="contactForm">
+
+                    <input type="hidden"
+                           name="_subject"
+                           value="Mensagem do Portfólio de Tólio Trica">
+
+                    <input type="hidden"
+                           name="_language"
+                           value="pt">
+
+
+                    <div class="form-group">
+
+                        <label for="name">Nome</label>
+
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Seu nome completo"
+                               required>
+
+                        <i class="fas fa-user"></i>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">E-mail</label>
+
+                      condary:hover,
         .btn-outline:hover {
             border-color: rgba(0,217,255,0.5);
             background: rgba(0,217,255,0.07);
